@@ -1,0 +1,11 @@
+Write a program to demonstrate the following:
+1. Lambda with 2 parameters.
+2. Streams - Any 5 functions and in that 2 terminal end functions.
+3. Method Referencing (All 3 types)
+4. Optional Class
+5. LocalDate and LocalTime
+6. Default Methods and Static Methods in the interface.
+7. CRUD operations using the ArrayList.
+8. Create a custom Exception and use it in the program.
+9. Executor Service
+10.Comparator and Comparable. 
