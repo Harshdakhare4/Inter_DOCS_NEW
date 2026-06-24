@@ -1,0 +1,53 @@
+// ✅ Show page
+function showPage(pageId) {
+    document.getElementById("selectionPage").classList.add("hidden");
+    document.getElementById(pageId).classList.remove("hidden");
+}
+
+// ✅ Go back
+function goBack() {
+    document.getElementById("doctorPage").classList.add("hidden");
+    document.getElementById("patientPage").classList.add("hidden");
+    document.getElementById("selectionPage").classList.remove("hidden");
+}
+
+// ✅ Doctor API call
+document.getElementById("doctorForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const doctor = {
+        name: document.getElementById("dname").value,
+        email: document.getElementById("demail").value,
+        phone: document.getElementById("dphone").value,
+        specialization: document.getElementById("dspec").value,
+        password: document.getElementById("dpass").value
+    };
+
+    fetch("http://localhost:8080/api/doctors", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(doctor)
+    })
+    .then(res => res.json())
+    .then(() => alert("Doctor Registered ✅"));
+});
+
+// ✅ Patient API call (update API if needed)
+document.getElementById("patientForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const patient = {
+        name: document.getElementById("pname").value,
+        email: document.getElementById("pemail").value,
+        phone: document.getElementById("pphone").value,
+        password: document.getElementById("ppass").value
+    };
+
+    fetch("http://localhost:8080/api/patients", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(patient)
+    })
+    .then(res => res.json())
+    .then(() => alert("Patient Registered ✅"));
+});
