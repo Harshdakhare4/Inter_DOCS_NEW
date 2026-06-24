@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript2</title>
+</head>
+<body>
+
+<h1 id="title">AddEventListener</h1>
+
+<button id="but">Click me</button><br><br>
+
+<label>Name:</label>
+<input type="text" placeholder="Enter your Name" id="username">
+
+<p style="background-color: antiquewhite;" id="outpt"></p>
+
+<div id="box" style="width:150px;height:80px;background:lightblue;">
+    Hover over me
+</div>
+
+<p class="text">One</p>
+<p class="text">Two</p>
+<p class="text1">Four</p>
+<p class="text1">Five</p>
+
+<script>
+
+ // click event
+    const button = document.getElementById("but");
+    button.addEventListener("click", function () {
+            alert("Clicked!");
+    });
+
+// input event
+    document.getElementById("username").addEventListener("input", function () {
+        document.getElementById("outpt").innerHTML = this.value;
+    });
+
+// mouseover event
+    const box = document.getElementById("box");
+
+ box.addEventListener("mouseover", function () {
+         this.style.backgroundColor = "orange";
+    });
+
+    box.addEventListener("mouseout", function () {
+         this.style.backgroundColor = "lightblue";
+    });
+let title = document.querySelector("#title");
+title.textContent="Hello this is Event listener and Queryselector";
+    
+// Difference between querySelector and queryselectorAll
+
+    let doc = document.querySelector(".text");
+    doc.textContent="Three";
+  //-----------------------------------------  
+     let doc1 = document.querySelectorAll(".text1");
+    doc1.forEach(element=>{
+        element.textContent="Three";
+    });
+  
+
+</script>
+
+</body>
+</html>

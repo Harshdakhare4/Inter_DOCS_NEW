@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <p>
+        In HTML, JavaScript statements are executed by the browser.
+    </p>
+   
+ <p id="demo"><h1 style="background-color: rgb(157, 255, 222); border-radius: 10px;width: 30%;height: 50px;">Luckydraw</h1></p>
+    <button style="background-color: rgb(251, 151, 2); width: 50px ;" onclick="luckydraw1()">Button 1</button>
+    <button style="background-color:  rgb(251, 151, 2); width: 50px;" onclick="luckydraw1()">Button 2</button>
+    <button style="background-color:  rgb(251, 151, 2); width: 50px ;" onclick="luckydraw1()">Button 3</button>
+    <button style="background-color:  rgb(251, 151, 2); width: 50px ;" onclick="luckydraw()">Button 4</button>
+    <button style="background-color:  rgb(251, 151, 2); width: 50px ;" onclick="luckydraw1()">Button 5</button>
+<div style="background-color: rgb(163, 148, 148);width: 30%;height: 80px;border-radius: 50px;">
+    
+   
+<p id="demo1" style="padding-left: 100px; padding-top: 30px; "></p>
+
+</div>
+<div style="background-color: rgb(163, 148, 148);width: 30%;height: 80px;border-radius: 50px;">
+
+<p id="demo2" style="padding-left: 100px; padding-top: 30px;"></p>
+</div>
+
+    <script>
+        document.getElementById("demo").innerHTML="Hello Harsh";
+        let audio = new Audio("7_crore_meme_sound_kbc.mp3");
+
+        let luckydraw = () =>{
+             document.getElementById("demo1").innerHTML="Congratulations, You Won";
+             document.getElementById("demo2").innerHTML=" ";
+             audio.play();
+             
+        }
+        let luckydraw1 = () =>{
+             document.getElementById("demo2").innerHTML="Better Luck next Time";
+             document.getElementById("demo1").innerHTML=" ";
+         
+        }
+    </script>
+</body>
+</html>

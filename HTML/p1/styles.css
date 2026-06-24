@@ -1,0 +1,58 @@
+*{
+    background-color: rgb(237, 245, 251);
+}
+
+
+
+
+.nav{
+    font-weight: 800;
+    background-color: rgb(212, 212, 254);
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+    font-style: normal;
+    display:flex;
+    justify-content:space-evenly;
+    /* justify-content:; */
+    padding: 10px 20px;
+    
+
+
+}
+.nav a{
+    margin: 10px;
+    align-items:center;
+    font-size: large;
+    justify-content:right;
+    text-decoration: none;
+    transition: color 0.3s ease;
+   
+}
+.logo{
+   
+height: 2cm;
+    width: auto;
+    border-radius: 10px;
+
+}
+
+.nav-links{
+    margin-left: auto;
+    padding: 25px 20px 15px 25px;
+    border-radius: 10px;
+}
+
+.nav-links a{
+    margin: 30px;
+    padding: 10px;
+    
+    color: darkblue;
+    transition: color 0.3s ease;
+    
+}
+
+
+.form{
+    margin: 20px;
+}

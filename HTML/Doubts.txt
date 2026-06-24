@@ -1,0 +1,19 @@
+--> Difference between div and p tags?
+--> CSS to apply
+# Alignment
+# margin
+# flexbox
+
+
+JAVA
+
+Propagation exception
+caught and uncaught exception
+Custom Exception
+
+
+
+Practise more on -----> StringBuilder , StringBuffer
+
+
+s

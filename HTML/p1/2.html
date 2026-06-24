@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>List, Table, Form & Input Tags</title>
+</head>
+<body>
+    <!-- image -->
+<img src="image1.jpg" alt="Image"> 
+
+
+<!-- List => ordered and unordered -->
+    <h2>List of Softwares needed.</h2>
+    <ol>
+        <li>VS Code</li>
+        <li>Java</li>
+        <li>JDK</li>
+        <li>Jetbrains</li>
+        <li>Intellij IDEA</li>
+        <li>Spring</li>
+    </ol>
+
+    <h2>Some General Tools.</h2>
+    <ul>
+        <li>MS WORD</li>
+        <li>MS PPT</li>
+        <li>MS EXCEL</li>
+        <li>OUTLOOK</li>
+        <li>TEAMS</li>
+    </ul>
+
+    <!-- Table -->
+     <h2>List of students in GEN-C training</h2>
+     
+     <table border="2">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>EMP-ID</th>
+  </tr>
+  <tr>
+    <td>Harsh</td>
+    <td>22</td>
+    <td>2446567</td>
+  </tr>
+  <tr>
+    <td>Harshal</td>
+    <td>23</td>
+    <td>2476537</td>
+  </tr>
+  <tr>
+    <td>Ajay</td>
+    <td>22</td>
+    <td>2436837</td>
+  </tr>
+  <tr>
+    <td>Ayush</td>
+    <td>22</td>
+    <td>2436507</td>
+  </tr>
+</table>
+
+<!--Forms  -->
+<h2><mark>Personal Information form</mark></h2>
+<form>
+    <label>Name:</label>
+    <input type="text" placeholder="Enter Name"><br>
+    <label>EMP-ID:</label>
+    <input type="text" placeholder="Enter Employee Id"><br>
+    <label>Gender:</label>
+    <input type="radio" name="gender">Male
+    <input type="radio" name="gender">Female
+</form>
+<button onclick="submitForm()">Submit</button>
+
+<script>
+    function submitForm(){
+        alert("Form submitted successfully");
+    }
+</script>
+
+</body>
+</html>
